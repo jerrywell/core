@@ -8,6 +8,20 @@
 
 #include "TimeParser.h"
 
+struct tm *str_time;
+char * unusedText;
+int changeAmount[9];
+int fromChangeAmount[9];
+int specAmount[3];
+int finalSpecAmount[3];
+int *timePointer[7];
+struct modifier mymodifier;
+struct modifier fromModifier;
+struct tm currentTime;
+struct tm temp_time;
+struct tm set_time;
+time_t curtime;
+time_t initialTime;
 
 void setCurrentTime()
 {
